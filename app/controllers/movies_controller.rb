@@ -2,6 +2,8 @@ class MoviesController < ApplicationController
   def index
     @movies = if params[:search].present?
                 MoviesFacade.search(params[:search])
+              elsif params[:upcoming].present?
+                MoviesFacade.upcoming
               else
                 MoviesFacade.top_40_movies
               end
