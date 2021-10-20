@@ -62,4 +62,22 @@ describe MoviesService do
 
     end
   end
+  it 'can get all the upcoming movie data' do
+    VCR.use_cassette('now_playing') do
+      response = MoviesService.now_playing
+
+      expect(response).to be_an Array
+      expect(response[0]).to be_a Hash
+
+      expect(response[0]).to have_key :original_title
+      expect(response[0][:original_title]).to be_a String
+
+      expect(response[0]).to have_key :title
+      expect(response[0][:title]).to be_a String
+
+      expect(response[0]).to have_key :release_date
+      expect(response[0][:release_date]).to be_a String
+
+    end
+  end
 end
