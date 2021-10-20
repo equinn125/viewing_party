@@ -2,5 +2,6 @@
 <ul>
 <li>Movie:  <%= movie.title %></li>
 <li>Vote Average: <%= movie.vote_average  %> </li>
+<%= link_to "Details", "/movies/#{movie.id}" %>
 </ul>
 <% end %>
