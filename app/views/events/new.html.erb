@@ -1,0 +1,17 @@
+<h1>Create a viewing party</h1>
+<%= form_with model: @event, local: true do |f| %>
+<%= f.label :title, 'Movie' %>
+<%= f.text_field :title %>
+<%=f.label :runtime, 'Duration' %>
+<%= f.text_field :runtime %>
+<%= f.label :date, 'Date' %>
+<%= f.date_field :date %>
+<%=f.label :time, 'Time'  %>
+<%= f.time_field :time %>
+<%= f.label :include, "Include" %>
+<% current_user.followees.each do |followee| %>
+<%= f.check_box :"attendees[#{followee.email}]" %>
+<%= f.label :"attendees[#{followee.email}]" %>
+<% end %>
+<%= f.submit "Create Party" %>
+<% end %>

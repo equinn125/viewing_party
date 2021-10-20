@@ -37,7 +37,7 @@ RSpec.describe 'The User dashboard' do
 
   it 'has a viewing party section for parties I have been invited to' do
     within "#invited-parties" do
-      expect(page).to have_content(@party_1.date)
+      expect(page).to have_content("2021-10-11")
       expect(page).to have_content(@party_1.time)
       expect(page).to have_content(@attendee_1.user.email)
       expect(page).to have_content("#{@user_1.email} is hosting")

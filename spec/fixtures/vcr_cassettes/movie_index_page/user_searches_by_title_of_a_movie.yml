@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 18 Oct 2021 02:59:25 GMT
+      - Wed, 20 Oct 2021 02:18:58 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -42,37 +42,37 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 d47bfce74ac0ba73e842bed313cc9e16.cloudfront.net (CloudFront)
+      - 1.1 ee9de9e6182ae0c8e8f119177e905245.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DFW55-C3
+      - DEN50-C2
       X-Amz-Cf-Id:
-      - wvRazc0CYtEPh6jCrID2JERuxlet7L9BF3ARtqUg7K_4QatL5mI2zw==
+      - Ip1otsDuzJtDNnaiNihGxjmSnprpBu95-x3eQifkSea37UelNSm-hQ==
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg","genre_ids":[53,80],"id":680,"original_language":"en","original_title":"Pulp
         Fiction","overview":"A burger-loving hit man, his philosophical partner, a
         drug-addled gangster''s moll and a washed-up boxer converge in this sprawling,
         comedic crime caper. Their adventures unfurl in three stories that ingeniously
-        trip back and forth in time.","popularity":58.787,"poster_path":"/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg","release_date":"1994-09-10","title":"Pulp
-        Fiction","video":false,"vote_average":8.5,"vote_count":21917},{"adult":false,"backdrop_path":"/ckqex7ae9whkgM3ffk49lSVNqgF.jpg","genre_ids":[99],"id":619836,"original_language":"en","original_title":"Pulp
+        trip back and forth in time.","popularity":50.253,"poster_path":"/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg","release_date":"1994-09-10","title":"Pulp
+        Fiction","video":false,"vote_average":8.5,"vote_count":21922},{"adult":false,"backdrop_path":"/ckqex7ae9whkgM3ffk49lSVNqgF.jpg","genre_ids":[99],"id":619836,"original_language":"en","original_title":"Pulp
         Fiction: The Facts","overview":"A series of interviews talking about Tarantino''s
-        early days and how he got to Pulp Fiction.","popularity":3.903,"poster_path":"/eSDP6tC1FIMZsPMclhsr8mYiSZk.jpg","release_date":"2002-08-20","title":"Pulp
+        early days and how he got to Pulp Fiction.","popularity":2.584,"poster_path":"/eSDP6tC1FIMZsPMclhsr8mYiSZk.jpg","release_date":"2002-08-20","title":"Pulp
         Fiction: The Facts","video":false,"vote_average":8.3,"vote_count":9},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":109005,"original_language":"en","original_title":"Pulp
         Fiction Art","overview":"A guilty pleasure of the mid-20th century, pulp fiction
         magazines were often defined less by their contents than by their provocative
         covers. This documentary explores the shocking art that brought life to these
         lurid publications. Filmmaker Jamie McDonald delves into the collection of
         art historian Robert Lesser, shedding light on this nearly forgotten art form
-        and the ways it impacted popular culture.","popularity":0.6,"poster_path":null,"release_date":"2005-01-01","title":"Pulp
+        and the ways it impacted popular culture.","popularity":0.902,"poster_path":null,"release_date":"2005-01-01","title":"Pulp
         Fiction Art","video":false,"vote_average":6.5,"vote_count":2},{"adult":false,"backdrop_path":null,"genre_ids":[35],"id":738735,"original_language":"en","original_title":"Stealing
         Pulp Fiction","overview":"A diehard Quentin Tarantino fan recruits his friend
-        Elizabeth to steal a 35mm film reel of Pulp Fiction.","popularity":0.6,"poster_path":"/5OHH3y2v8uwluOZLC2Kt8ENcjxn.jpg","release_date":"2020-09-01","title":"Stealing
+        Elizabeth to steal a 35mm film reel of Pulp Fiction.","popularity":0.889,"poster_path":"/5OHH3y2v8uwluOZLC2Kt8ENcjxn.jpg","release_date":"2020-09-01","title":"Stealing
         Pulp Fiction","video":false,"vote_average":0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":295641,"original_language":"en","original_title":"Pulp
         Fiction: the Golden Age of Storytelling","overview":"This program profiles
         writers of the 20s, 30s, and 40s, known as the Pulp Fiction-era. These writers
         created the iconic characters who live on today in our collective hearts and
         imaginations. It has even been estimated that 90-95% of the top blockbusters
-        in Hollywood movies, were based on the stories from the Pulp Fiction-era.","popularity":0.6,"poster_path":null,"release_date":"2009-01-01","title":"Pulp
+        in Hollywood movies, were based on the stories from the Pulp Fiction-era.","popularity":0.623,"poster_path":null,"release_date":"2009-01-01","title":"Pulp
         Fiction: the Golden Age of Storytelling","video":false,"vote_average":4,"vote_count":1},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":323819,"original_language":"en","original_title":"UFOTV
         Presents: Pulp Fiction: The Golden Age of Storytelling","overview":"Discover
         the true history of the era of pulp fiction and the golden age of science
@@ -85,9 +85,9 @@ http_interactions:
         prolific authors Ray Bradbury and Frederik Pohl recall the days of nominal
         pay, short deadlines, and the insatiable demand for copy. Special coverage
         is given to the original cover art that defined pulp, featuring beautiful
-        women, space creatures and blazing weapons.","popularity":0.623,"poster_path":null,"release_date":"2010-01-01","title":"UFOTV
+        women, space creatures and blazing weapons.","popularity":0.6,"poster_path":null,"release_date":"2010-01-01","title":"UFOTV
         Presents: Pulp Fiction: The Golden Age of Storytelling","video":false,"vote_average":4,"vote_count":1}],"total_pages":1,"total_results":6}'
-  recorded_at: Mon, 18 Oct 2021 02:59:25 GMT
+  recorded_at: Wed, 20 Oct 2021 02:18:58 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<API_KEY>&include_adult=false&language=en-US&page=2&query=Pulp%20Fiction
@@ -113,7 +113,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 18 Oct 2021 02:59:25 GMT
+      - Wed, 20 Oct 2021 02:18:59 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -130,13 +130,13 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 d47bfce74ac0ba73e842bed313cc9e16.cloudfront.net (CloudFront)
+      - 1.1 a47d45d25cc354507eae77aba89ca253.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DFW55-C3
+      - DEN50-C2
       X-Amz-Cf-Id:
-      - QRryOITc3MWlUvvUSfVWUVQteSHffP-WwCqNF93Ay37uQRVCEJ348w==
+      - OVvyA7zKVnrYtTl0SGsdSwu6m8xGJ8UfqJHXubXDORolUJtaCRaDmA==
     body:
       encoding: ASCII-8BIT
       string: '{"page":2,"results":[],"total_pages":1,"total_results":6}'
-  recorded_at: Mon, 18 Oct 2021 02:59:25 GMT
+  recorded_at: Wed, 20 Oct 2021 02:18:59 GMT
 recorded_with: VCR 6.0.0

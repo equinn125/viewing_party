@@ -7,11 +7,11 @@ class Event < ApplicationRecord
   has_many :attendees
   has_many :users, through: :attendees
 
-#   def host?
-#     if user_id == user
-#       'hosting'
-#     else
-#       "#{user_id} is hosting"
-#   end
-# end
+  #   def host?
+  #     if user_id == user
+  #       'hosting'
+  #     else
+  #       "#{user_id} is hosting"
+  #   end
+  # end
 end

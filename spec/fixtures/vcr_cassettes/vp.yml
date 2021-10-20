@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/238?api_key=<API_KEY>&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 20 Oct 2021 19:47:52 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - 647ad0139961d413fe867b26138edd06a9b4ce4d
+      X-Memc-Age:
+      - '15878'
+      X-Memc-Expires:
+      - '1145'
+      Etag:
+      - W/"2ba93ecc549d82fbc2506b8152d3f94d"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 5b060cb62fb310be9e41fb3218654679.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SFO20-C1
+      X-Amz-Cf-Id:
+      - "-kjyX4wwFkQ53Xda5tgoPfGn5frkgzYx3gv2LlMEUbwPnI0CSVAGhA=="
+      Age:
+      - '7573'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"adult":false,"backdrop_path":"/rSPw7tgCH9c6NqICZef4kZjFOQ5.jpg","belongs_to_collection":{"id":230,"name":"The
+        Godfather Collection","poster_path":"/zqV8MGXfpLZiFVObLxpAI7wWonJ.jpg","backdrop_path":"/pGl7NqNhyncju3Qu8LGA7owciMW.jpg"},"budget":6000000,"genres":[{"id":18,"name":"Drama"},{"id":80,"name":"Crime"}],"homepage":"http://www.thegodfather.com/","id":238,"imdb_id":"tt0068646","original_language":"en","original_title":"The
+        Godfather","overview":"Spanning the years 1945 to 1955, a chronicle of the
+        fictional Italian-American Corleone crime family. When organized crime family
+        patriarch, Vito Corleone barely survives an attempt on his life, his youngest
+        son, Michael steps in to take care of the would-be killers, launching a campaign
+        of bloody revenge.","popularity":61.648,"poster_path":"/eEslKSwcqmiNS6va24Pbxf2UKmJ.jpg","production_companies":[{"id":4,"logo_path":"/fycMZt242LVjagMByZOLUGbCvv3.png","name":"Paramount","origin_country":"US"},{"id":10211,"logo_path":null,"name":"Alfran
+        Productions","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
+        States of America"}],"release_date":"1972-03-14","revenue":245066411,"runtime":175,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"},{"english_name":"Italian","iso_639_1":"it","name":"Italiano"},{"english_name":"Latin","iso_639_1":"la","name":"Latin"}],"status":"Released","tagline":"An
+        offer you can''t refuse.","title":"The Godfather","video":false,"vote_average":8.7,"vote_count":14931}'
+  recorded_at: Wed, 20 Oct 2021 21:54:05 GMT
+recorded_with: VCR 6.0.0

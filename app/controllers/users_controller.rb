@@ -1,9 +1,8 @@
 class UsersController < ApplicationController
-  def show
-  end
   def new
     @user = User.new
   end
+
   def create
     user = user_params
     user[:email] = user[:email].downcase
@@ -18,8 +17,7 @@ class UsersController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
   def find
     @found_user = User.find_by(email: params[:user_search].downcase)
@@ -31,12 +29,13 @@ class UsersController < ApplicationController
       current_user.followers << @found_user
       flash[:alert] = "You are now following #{@found_user.email}!"
     else
-      flash[:alert] = "User not found. Please try your search again."
+      flash[:alert] = 'User not found. Please try your search again.'
     end
-    redirect_to dashboard_path(current_user.id)
+    redirect_to dashboard_path
   end
 
   private
+
   def user_params
     params.require(:user).permit(:email, :password, :password_confirmation)
   end

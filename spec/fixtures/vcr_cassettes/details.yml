@@ -1,0 +1,245 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/1?api_key=<API_KEY>&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 20 Oct 2021 19:41:18 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - 5ef0f36e1049afbcf98468dc8b67d701f1298abf
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '17526'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 d12f243c0eac340525d6f4e735c01b64.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SFO53-C1
+      X-Amz-Cf-Id:
+      - 9oNBX2WhgLwwhAaGhRM37n2ZXfLNJtjkNeiF7Xckh0XMupW1pcQPWA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":false,"status_code":34,"status_message":"The resource you
+        requested could not be found."}'
+  recorded_at: Wed, 20 Oct 2021 19:41:18 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/genre/movie/list?api_key=<API_KEY>&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 20 Oct 2021 19:41:18 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - af4426908218dad356a942000911b15f14e85c85
+      X-Memc-Age:
+      - '1238'
+      X-Memc-Expires:
+      - '13537'
+      Etag:
+      - W/"98d6f4fb3a0e0c77544a7277f32baebb"
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ac3f0425be668a2439884bb8cbd3ccd9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SFO53-C1
+      X-Amz-Cf-Id:
+      - jdezRU0ymq2kC_ROZIlp10M3QFVFHcGBtU5QmyEJ-NZa8515fyZJ8Q==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"genres":[{"id":28,"name":"Action"},{"id":12,"name":"Adventure"},{"id":16,"name":"Animation"},{"id":35,"name":"Comedy"},{"id":80,"name":"Crime"},{"id":99,"name":"Documentary"},{"id":18,"name":"Drama"},{"id":10751,"name":"Family"},{"id":14,"name":"Fantasy"},{"id":36,"name":"History"},{"id":27,"name":"Horror"},{"id":10402,"name":"Music"},{"id":9648,"name":"Mystery"},{"id":10749,"name":"Romance"},{"id":878,"name":"Science
+        Fiction"},{"id":10770,"name":"TV Movie"},{"id":53,"name":"Thriller"},{"id":10752,"name":"War"},{"id":37,"name":"Western"}]}'
+  recorded_at: Wed, 20 Oct 2021 19:41:18 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/1?api_key=<API_KEY>&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 20 Oct 2021 19:41:18 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - 5ef0f36e1049afbcf98468dc8b67d701f1298abf
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '17526'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 68914922a694954838e87fc9b0aa10fe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SFO53-C1
+      X-Amz-Cf-Id:
+      - qVHzXN8MoJU5uq61cniXHl0ump0CXGYhqHaGA8sMzaSHO3blOpuujA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":false,"status_code":34,"status_message":"The resource you
+        requested could not be found."}'
+  recorded_at: Wed, 20 Oct 2021 19:41:18 GMT
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/movie/1/credits?api_key=<API_KEY>&language=en-US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 20 Oct 2021 19:41:19 GMT
+      Server:
+      - openresty
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - ETag, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After,
+        Content-Length, Content-Range
+      Cache-Control:
+      - public, max-age=28800
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - d6a37b51f35faf71a3a1b3548a83680296aec6b2
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '16878'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 ad82d8a3c91257adecf18541576c7e72.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SFO53-C1
+      X-Amz-Cf-Id:
+      - zVXwDNiEpiclWv4ODR8yraway06qu5yL8Y1f36nJHhOhWK5JFoNW_A==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":false,"status_code":34,"status_message":"The resource you
+        requested could not be found."}'
+  recorded_at: Wed, 20 Oct 2021 19:41:19 GMT
+recorded_with: VCR 6.0.0
