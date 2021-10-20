@@ -35,5 +35,11 @@ class MoviesService
       two = get_data("https://api.themoviedb.org/3/movie/upcoming?api_key=#{ENV['API_KEY']}&language=en-US&page=2")
       one[:results] + two[:results]
     end
+
+    def now_playing
+      one = get_data("https://api.themoviedb.org/3/movie/now_playing?api_key=#{ENV['API_KEY']}&language=en-US&page=1")
+      two = get_data("https://api.themoviedb.org/3/movie/now_playing?api_key=#{ENV['API_KEY']}&language=en-US&page=2")
+      one[:results] + two[:results]
+    end
   end
 end

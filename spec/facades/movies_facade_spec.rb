@@ -26,4 +26,11 @@ describe MoviesFacade do
       expect(one_discover.title).to eq("Venom: Let There Be Carnage")
     end
   end
+  it '#now_playing returns movie objects' do
+    VCR.use_cassette('playing') do
+      one_discover = MoviesFacade.now_playing.first
+      expect(one_discover).to be_a Movie
+      expect(one_discover.title).to eq("Venom: Let There Be Carnage")
+    end
+  end
 end

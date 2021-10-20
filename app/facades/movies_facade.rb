@@ -35,5 +35,12 @@ class MoviesFacade
       data = MoviesService.movie_cast(movie_id)
       MovieCast.new(data)
     end
+
+    def now_playing
+      playing = MoviesService.now_playing
+      playing.map do |data|
+        Movie.new(data)
+      end
+    end
   end
 end

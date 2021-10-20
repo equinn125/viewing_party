@@ -4,6 +4,8 @@ class MoviesController < ApplicationController
                 MoviesFacade.search(params[:search])
               elsif params[:upcoming].present?
                 MoviesFacade.upcoming
+              elsif params[:playing].present?
+                MoviesFacade.now_playing
               else
                 MoviesFacade.top_40_movies
               end
