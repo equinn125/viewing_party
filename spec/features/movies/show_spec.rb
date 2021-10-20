@@ -19,6 +19,10 @@ RSpec.describe 'movie show page' do
 #  Count of total reviews
 #  Each review's author and information
   before :each do
+    @user = User.create(email: 'test@test.com', password: 'password123', password_confirmation: 'password123')
+    @user_1 = User.create(email: 'test1@test.com', password: 'password1234', password_confirmation: 'password1234')
+    @friendship = Friendship.create(follower_id:@user.id, followee_id:@user_1.id)
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
   end
   it 'has a button to create a viewing party' do
     VCR.use_cassette('viewingparty-link') do
@@ -29,7 +33,7 @@ RSpec.describe 'movie show page' do
 
       click_link 'Create Viewing Party'
 
-      expect(current_path).to eq("/events/new")
+      expect(current_path).to eq(new_event_path)
 
     end
   end
