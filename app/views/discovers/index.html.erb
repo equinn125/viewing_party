@@ -1,6 +1,7 @@
 <h1>Discover Movies</h1>
 
 <%=button_to 'Discover Top 40 Movies', movies_path, method: :get %>
+<%= button_to  'Upcoming Movies', movies_path, method: :get, params:{upcoming: 'upcoming'} %>
 
 <h3>Find By Title</h3>
 <%= form_with url: movies_path, method: :get, local: true do |f| %>

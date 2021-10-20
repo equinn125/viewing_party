@@ -28,4 +28,12 @@ RSpec.describe 'discover movies page' do
       expect(current_path).to eq(movies_path)
     end
   end
+
+  it 'has a button to discover movies' do
+    VCR.use_cassette('discover_movies') do
+      expect(page).to have_button('Upcoming Movies')
+      click_on('Upcoming Movies')
+      expect(current_path).to eq(movies_path)
+    end
+  end
 end

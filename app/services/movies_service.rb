@@ -29,5 +29,11 @@ class MoviesService
     def movie_cast(movie_id)
       cast = get_data("https://api.themoviedb.org/3/movie/#{movie_id}/credits?api_key=#{ENV['API_KEY']}&language=en-US")
     end
+
+    def upcoming
+      one = get_data("https://api.themoviedb.org/3/movie/upcoming?api_key=#{ENV['API_KEY']}&language=en-US&page=1")
+      two = get_data("https://api.themoviedb.org/3/movie/upcoming?api_key=#{ENV['API_KEY']}&language=en-US&page=2")
+      one[:results] + two[:results]
+    end
   end
 end

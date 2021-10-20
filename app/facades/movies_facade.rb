@@ -7,6 +7,13 @@ class MoviesFacade
       end
     end
 
+    def upcoming
+      upcoming = MoviesService.upcoming
+      upcoming .map do |data|
+        Movie.new(data)
+      end
+    end
+
     def search(title)
       data = MoviesService.movie_search(title)
       data.map do |data|
